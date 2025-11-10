@@ -7,50 +7,50 @@ class Base
         int i,j;
         void fun()
         {
-            cout<<"Inside Base fun\n";
+            cout<<"Inside Base fun \n";
         }
         void gun()
         {
-            cout<<"Inside Base gun\n";
+            cout<<"Inside Base gun \n";
         }
         void sun()
         {
-            cout<<"Inside Base s¯¯¯un\n";
+            cout<<"Inside Base sun \n";
         }
         void bun()
         {
-            cout<<"Inside Base bun\n";
+            cout<<"Inside Base bun \n";
         }
 };
 
 class Derived : public Base
 {
     public:
-        int x;  
+        int x;
         void gun()
         {
-            cout<<"Inside Derived gun\n";
+            cout<<"Inside Derived gun \n";
         }
         void sun()
         {
-            cout<<"Inside Derived sun\n";
+            cout<<"Inside Derived sun \n";
         }
         void run()
         {
-            cout<<"Inside Derived run\n";
+            cout<<"Inside Derived run \n";
         }
         void mun()
         {
-            cout<<"Inside Derived mun\n";
+            cout<<"Inside Derived mun \n";
         }
 };
 
 int main()
 {
-    Base *bp1 = new Base();             // Nocasting
-    Derived *dp1 = new Derived();       // Nocasting
-    Base *bp2 = new Derived();          // Upcasting
-    Derived *dp2 = new Base();          // Downcasting      ERROR
+    Base *bp1 = new Base();             //NO Casting
+    Derived *dp1 = new Derived();       //NO Casting
+    Base *bp2 = new Derived();          //UP Casting
+    Derived *dp2 = new Base();          // DOWN Casting     ERROR
 
     return 0;
 }

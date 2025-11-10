@@ -1,34 +1,34 @@
 #include<iostream>
 using namespace std;
 
-class Base      // 8
+class Base      //8
 {
     public:
         int i,j;
 
         void fun()
         {
-            cout<<"Inside Base fun\n";
+            cout<<"Inside Base fun \n";
         }
 };
 
-class Derived : public Base     // 12
+class Derived : public Base         //12
 {
     public:
         int x;
 
         void gun()
         {
-            cout<<"Inside Derived gun\n";
+            cout<<"Inside Derived gun \n";
         }
 };
 
 int main()
 {
-    Base bobj;
+    Base bojb;
     Derived dobj;
 
-    bobj.fun();
+    bojb.fun();
     
     dobj.fun();
     dobj.gun();

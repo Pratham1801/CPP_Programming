@@ -20,37 +20,36 @@ class Demo
             this->j = b;
         }
 
-        void Fun()      // void Fun(Demo * const this)
+        void Fun()          //void Fun(Demo * const this)
         {
             cout<<"Inside Fun\n";
-            cout<<"Value of i is : "<<this->i<<"\n";
-            cout<<"Value of j is : "<<this->j<<"\n";
-            cout<<"Value of x is : "<<x<<"\n";
+            cout<<"Value of i is :"<<this->i<<"\n";
+            cout<<"Value of x is :"<<x<<"\n";
         }
 
-        static void Gun()   // static void Gun()
+        static void Gun()       //static void Gun()
         {
             cout<<"Inside Gun\n";
-            // cout<<i<<"\n";   NA
-            // cout<<j<<"\n";   NA
+            // cout<<i<<"\n";  NA
+            // cout<<j<<"\n";  NA
             cout<<x<<"\n";
         }
 };
 
-int Demo :: x = 11;
+int Demo::x = 11;
 
 int main()
 {
     Demo::Gun();
-    cout<<"Value of x is : "<<Demo::x<<"\n";
+    cout<<"Value of x is :"<<Demo::x<<"\n";
 
     Demo obj(10,20);
 
     obj.Fun();
-
-    obj.Gun();      // Demo::Gun();
-
-    cout<<"Size of obj is : "<<sizeof(obj)<<"\n";
     
+    obj.Gun();      //Demo ::Gun();
+
+    cout<<"size of obj is :"<<sizeof(obj)<<"\n";
+
     return 0;
 }

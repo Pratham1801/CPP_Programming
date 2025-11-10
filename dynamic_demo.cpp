@@ -4,25 +4,25 @@ using namespace std;
 int main()
 {
     int length = 0;
-    int *Arr = NULL;
+    int * Arr = NULL;
 
-    cout<<"Enter the number of elements : \n";
+    cout<<"Enter the number of elements \n";
     cin>>length;
-
-    // Step 1 : Allocate the memory
+    
+    // Step 1: Allocate the Memory
     Arr = new int[length];
     if(Arr == NULL)
     {
-        cout<<"Unable to allocate memory\n";
+        cout<<"Unable to allocate the memory";
     }
-    else
+    else 
     {
-        cout<<"Memory gets succesfully allocated\n";
+        cout<<"Memory gets succesfully allocated";
     }
 
-    // Step 2 : Use the memory
+    // Step 2: Use the Memory
 
-    // Step 3 : Deallocate the memory
+    // Step 1: Deallocate the Memory
     delete [] Arr;
 
     return 0;

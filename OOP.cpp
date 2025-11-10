@@ -21,16 +21,16 @@ class Arithematic
 
         int Addition()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 + iNo2;
-            return iAns; 
+            return iAns;
         }
 
         int Substraction()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 - iNo2;
-            return iAns; 
+            return iAns;
         }
 };
 

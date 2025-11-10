@@ -9,30 +9,30 @@ class Arithematic
 
         Arithematic()
         {
-            cout<<"Inside default constructor\n";
+            cout <<"Inside default constructor\n";
             iNo1 = 0;
             iNo2 = 0;
         }
 
         Arithematic(int A, int B)
         {
-            cout<<"Inside parametrised constructor\n";
+            cout <<"Inside parametrised constructor\n";
             iNo1 = A;
             iNo2 = B;
         }
 
         int Addition()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 + iNo2;
-            return iAns; 
+            return iAns;
         }
 
         int Substraction()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 - iNo2;
-            return iAns; 
+            return iAns;
         }
 };
 

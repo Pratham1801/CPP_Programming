@@ -21,16 +21,16 @@ class Arithematic
 
         int Addition()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 + iNo2;
-            return iAns; 
+            return iAns;
         }
 
         int Substraction()
         {
-            int iAns = 0;
+            int iAns = 0; 
             iAns = iNo1 - iNo2;
-            return iAns; 
+            return iAns;
         }
 };
 
@@ -46,7 +46,7 @@ int main()
 
     iRet = aobj1.Substraction();
     cout<<"Substraction is : "<<iRet<<"\n";
-    
+
     iRet = aobj2.Addition();
     cout<<"Addition is : "<<iRet<<"\n";
 

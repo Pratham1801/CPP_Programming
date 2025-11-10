@@ -6,7 +6,7 @@ class Demo
     public:
         void Display()
         {
-            cout<<"Insiode Deisplay\n";
+            cout<<"Inside Display\n";
         }
 };
 
@@ -14,7 +14,7 @@ int main()
 {
     Demo dobj;
 
-    cout<<sizeof(dobj);     // 1 byte
+    cout<<sizeof(dobj);     //1
 
     return 0;
 }

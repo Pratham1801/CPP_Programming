@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Base  // 12
+class Base      //12
 {
     public:
         int i;
@@ -17,40 +17,39 @@ class Base  // 12
         }
         void fun()
         {
-            cout<<i<<"\n";  // Allowed
-            cout<<j<<"\n";  // Allowed
-            cout<<k<<"\n";  // Allowed
+            cout<<"i"<<"\n";       //Allowed
+            cout<<"j"<<"\n";       // Allowed
+            cout<<"k"<<"\n";        //Allowed
         }
 };
 
-class Derived : public Base     // 16
+class Derived : public Base     //16
 {
     public:
     int x;
-
-    void Display()
-    {
-        cout<<i<<"\n";  // Allowed
-        cout<<j<<"\n";  // Error
-        cout<<k<<"\n";  // Allowed
-    }
+        void Display()
+        {
+            cout<<"i"<<"\n";        //Allowed
+            cout<<"j"<<"\n";        // Error
+            cout<<"k"<<"\n";        // Allowed
+        } 
 };
 
 int main()
 {
-    Base bobj;
+    Base bojb;
     Derived dobj;
 
-    cout<<bobj.i<<"\n"; // Allowed
-    cout<<bobj.j<<"\n"; // Error
-    cout<<bobj.k<<"\n"; // Error
+    cout<<bojb.i<<"\n";     //Allowed
+    cout<<bojb.j<<"\n";     //Error
+    cout<<bojb.k<<"\n";     //Error
 
-    cout<<dobj.i<<"\n"; // Allowed
-    cout<<dobj.j<<"\n"; // Error
-    cout<<dobj.k<<"\n"; // Error
+    cout<<dojb.i<<"\n";     //Allowed
+    cout<<dojb.j<<"\n";     //Error
+    cout<<dojb.k<<"\n";     //Error
     
-    dobj.fun();         // Allowed
-    dobj.Display();     // Allowed
+    dobj.fun();         //Allowed
+    dobj.Display();     //Allowed
 
     return 0;
 }

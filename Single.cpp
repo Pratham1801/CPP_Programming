@@ -8,7 +8,7 @@ class Base
 
         void fun()
         {
-            cout<<"Inside Base fun\n";
+            cout<<"Inside Base fun \n";
         }
 };
 
@@ -19,17 +19,17 @@ class Derived : public Base
 
         void gun()
         {
-            cout<<"Inside Derived gun\n";
+            cout<<"Inside Derived gun \n";
         }
 };
 
 int main()
 {
-    Base bobj;
+    Base bojb;
     Derived dobj;
 
-    cout<<"Size of Base class object : "<<sizeof(bobj)<<"\n";
-    cout<<"Size of Derived class object : "<<sizeof(dobj)<<"\n";
+    cout<<"Size of Base class object :"<<sizeof(bojb)<<"\n";
+    cout<<"Size of Derived class object :"<<sizeof(dobj)<<"\n";
 
     return 0;
 }
